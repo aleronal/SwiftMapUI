@@ -9,16 +9,33 @@
 /* Begin PBXBuildFile section */
 		3543564D2A87B2C50059CA60 /* SwiftuiMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543564C2A87B2C50059CA60 /* SwiftuiMapApp.swift */; };
 		3543564F2A87B2C50059CA60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543564E2A87B2C50059CA60 /* ContentView.swift */; };
-		354356512A87B2C60059CA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354356502A87B2C60059CA60 /* Assets.xcassets */; };
 		354356542A87B2C60059CA60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354356532A87B2C60059CA60 /* Preview Assets.xcassets */; };
+		3543565B2A87B3340059CA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3543565A2A87B3340059CA60 /* Assets.xcassets */; };
+		354356602A87B6520059CA60 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543565F2A87B6520059CA60 /* Location.swift */; };
+		354356632A87B7220059CA60 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354356622A87B7220059CA60 /* LocationsDataService.swift */; };
+		354356652A87B8600059CA60 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354356642A87B8600059CA60 /* LocationsView.swift */; };
+		354356672A87BB0B0059CA60 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354356662A87BB0B0059CA60 /* LocationsViewModel.swift */; };
+		354356692A87C4990059CA60 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354356682A87C4990059CA60 /* LocationsListView.swift */; };
+		3543566B2A8AA8450059CA60 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543566A2A8AA8450059CA60 /* LocationPreviewView.swift */; };
+		3543566D2A8AB6D70059CA60 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543566C2A8AB6D70059CA60 /* LocationMapAnnotationView.swift */; };
+		3543566F2A8ACB060059CA60 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543566E2A8ACB060059CA60 /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		354356492A87B2C50059CA60 /* SwiftuiMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftuiMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3543564C2A87B2C50059CA60 /* SwiftuiMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiMapApp.swift; sourceTree = "<group>"; };
 		3543564E2A87B2C50059CA60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		354356502A87B2C60059CA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354356532A87B2C60059CA60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3543565A2A87B3340059CA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3543565F2A87B6520059CA60 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		354356622A87B7220059CA60 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		354356642A87B8600059CA60 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		354356662A87BB0B0059CA60 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		354356682A87C4990059CA60 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		3543566A2A8AA8450059CA60 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		3543566C2A8AB6D70059CA60 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		3543566E2A8ACB060059CA60 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		35A0A4C22A91054F00B394E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +68,14 @@
 		3543564B2A87B2C50059CA60 /* SwiftuiMap */ = {
 			isa = PBXGroup;
 			children = (
+				35A0A4C22A91054F00B394E0 /* Info.plist */,
+				354356612A87B7050059CA60 /* DataServices */,
+				3543565D2A87B61B0059CA60 /* Views */,
+				3543565E2A87B6220059CA60 /* ViewModels */,
+				3543565C2A87B6130059CA60 /* Models */,
 				3543564C2A87B2C50059CA60 /* SwiftuiMapApp.swift */,
 				3543564E2A87B2C50059CA60 /* ContentView.swift */,
-				354356502A87B2C60059CA60 /* Assets.xcassets */,
+				3543565A2A87B3340059CA60 /* Assets.xcassets */,
 				354356522A87B2C60059CA60 /* Preview Content */,
 			);
 			path = SwiftuiMap;
@@ -65,6 +87,42 @@
 				354356532A87B2C60059CA60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3543565C2A87B6130059CA60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3543565F2A87B6520059CA60 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3543565D2A87B61B0059CA60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				354356642A87B8600059CA60 /* LocationsView.swift */,
+				354356682A87C4990059CA60 /* LocationsListView.swift */,
+				3543566A2A8AA8450059CA60 /* LocationPreviewView.swift */,
+				3543566C2A8AB6D70059CA60 /* LocationMapAnnotationView.swift */,
+				3543566E2A8ACB060059CA60 /* LocationDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3543565E2A87B6220059CA60 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				354356662A87BB0B0059CA60 /* LocationsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		354356612A87B7050059CA60 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				354356622A87B7220059CA60 /* LocationsDataService.swift */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +183,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3543565B2A87B3340059CA60 /* Assets.xcassets in Resources */,
 				354356542A87B2C60059CA60 /* Preview Assets.xcassets in Resources */,
-				354356512A87B2C60059CA60 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354356632A87B7220059CA60 /* LocationsDataService.swift in Sources */,
+				3543566D2A8AB6D70059CA60 /* LocationMapAnnotationView.swift in Sources */,
+				354356692A87C4990059CA60 /* LocationsListView.swift in Sources */,
+				354356672A87BB0B0059CA60 /* LocationsViewModel.swift in Sources */,
 				3543564F2A87B2C50059CA60 /* ContentView.swift in Sources */,
+				354356652A87B8600059CA60 /* LocationsView.swift in Sources */,
+				354356602A87B6520059CA60 /* Location.swift in Sources */,
+				3543566B2A8AA8450059CA60 /* LocationPreviewView.swift in Sources */,
+				3543566F2A8ACB060059CA60 /* LocationDetailView.swift in Sources */,
 				3543564D2A87B2C50059CA60 /* SwiftuiMapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,11 +335,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftuiMap/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftuiMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,11 +363,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftuiMap/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftuiMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
